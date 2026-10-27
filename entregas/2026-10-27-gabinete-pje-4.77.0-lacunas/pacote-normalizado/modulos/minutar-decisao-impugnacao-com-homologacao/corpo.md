@@ -27,7 +27,7 @@ Não se usa, e o destino é:
 
 P1. Rito e Contadoria (regra 91). Rito comum provado por Id. (classe, competência, órgão que julgou o recurso); o órgão é sempre a Contadoria Judicial Única. Se falhar: Juizado vai para `minutar-impugnacao-cumprimento-jec`; rito duvidoso é AGUARDANDO CONFIRMAÇÃO, sem minuta; cadastro divergente do título vai para `decidir-rito-e-competencia-do-cadastro`.
 
-P2. Natureza da executada. Particular (banco, seguradora, empresa) segue esta skill. Se falhar: Fazenda Pública vai para `minutar-homologacao-calculos` (HC-01 a HC-03); empresa pública ou sociedade de economia mista é AGUARDANDO CONFIRMAÇÃO (a trilha depende de a entidade explorar atividade econômica); recuperação judicial ou falência da executada é ficha de devolução (regra 53), sem constrição.
+P2. Natureza da executada. Particular (banco, seguradora, empresa) segue esta skill. Se falhar: Fazenda Pública vai para `minutar-homologacao-calculos` (HC-01 a HC-03); empresa pública ou sociedade de economia mista é AGUARDANDO CONFIRMAÇÃO (a trilha depende de a entidade explorar atividade econômica); recuperação judicial ou falência da executada vai à `minutar-decisao-executado-recuperacao-judicial` (regra 53, item 3, alterada em 27.10.2026), sem constrição.
 
 P3. Cálculo da Contadoria Judicial Única juntado e lido, com Id. e data em que a planilha foi gerada (dd/mm/aaaa). Planilha lida por extração estrutural (regra 32), nunca por texto achatado. Se falhar: sem cálculo, a skill é `contadoria-diagnostico-e-minutas`; planilha ilegível, via dos autos baixados (regra 35) e sem minuta do comando que depende dela.
 

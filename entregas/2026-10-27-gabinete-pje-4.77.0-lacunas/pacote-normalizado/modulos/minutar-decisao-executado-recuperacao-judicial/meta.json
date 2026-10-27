@@ -1,0 +1,84 @@
+{
+ "prefixo": "RJU",
+ "skill": "minutar-decisao-executado-recuperacao-judicial",
+ "especie": "DP",
+ "titulo": "Cumprimento contra empresa em recuperação judicial ou falida",
+ "descricao": "Minuta (versão 0.1, esqueleto sem modelo vigente do gabinete; autorizado pelo magistrado em 27.10.2026, regra 53, item 3) o cumprimento contra sociedade empresária em recuperação judicial: natureza do crédito alegado como concursal (RJU-01); consequências processuais dessa natureza (RJU-02); parâmetros de cálculo até a data do pedido e novação (RJU-03); gratuidade da recuperanda pedida na impugnação (RJU-04); despacho de suspensão com intimações (RJU-05); vista ao exequente sobre a falência (RJU-06); orientação da sentença de extinção com certidão de crédito (RJU-07). Use quando o usuário disser: \"minute o caso da recuperação judicial\", \"crédito concursal\", \"executada em recuperação judicial\", \"executada falida\", \"certidão de crédito para habilitação\".",
+ "familias": [
+  "AD",
+  "AC"
+ ],
+ "familia": "AD",
+ "tipo": "DEC",
+ "complexidade": 3,
+ "sit_id": "executado-recuperacao-judicial",
+ "situacao": "Cumprimento de sentença do rito comum contra sociedade empresária privada em recuperação judicial (processamento deferido, com Id.) ou com falência decretada e provada: natureza concursal do crédito, efeitos processuais, parâmetros até a data do pedido, gratuidade da recuperanda, suspensão, vista sobre a falência ou extinção com certidão de crédito (regra 53, item 3, alterada em 27.10.2026)",
+ "marcos": [
+  "decisão de deferimento do processamento da recuperação judicial ou decretação da falência, com Id. e data",
+  "fato gerador do crédito com data e Id.",
+  "impugnação da executada alegando crédito concursal ou pedido do exequente"
+ ],
+ "urgencias": [
+  "valor constrito sem destinação",
+  "processo antigo"
+ ],
+ "ato_cabivel": "decisão sobre executada em recuperação judicial ou falência",
+ "capitulos": [
+  "natureza concursal do crédito e efeitos da recuperação judicial no cumprimento"
+ ],
+ "especialistas": [
+  "calculista",
+  "pesquisador-vigencia"
+ ],
+ "tabela": [
+  "Executada em recuperação judicial ou falida no cumprimento do rito comum (regra 53, item 3, alterada em 27.10.2026): natureza do crédito, efeitos, parâmetros, gratuidade, suspensão, falência e extinção com certidão de crédito (27.10.2026)",
+  "Esqueleto 0.1 sem modelo: RJU-01 a RJU-07 (RJU-05 despacho; RJU-07 orientação)"
+ ],
+ "tipo_por_ramo": {
+  "RJU-01": "DEC",
+  "RJU-02": "DEC",
+  "RJU-03": "DEC",
+  "RJU-04": "DEC",
+  "RJU-05": "DESP",
+  "RJU-06": "DEC",
+  "RJU-07": "SENT"
+ },
+ "gatilhos": [
+  [
+   "crédito concursal",
+   "executada em recuperação judicial",
+   "executada falida",
+   "certidão de crédito"
+  ]
+ ],
+ "exemplo_nome": "AD_DEC_recuperação judicial_natureza do crédito",
+ "origem": "pacote de lacunas de 27.10.2026 (triagem de cobertura de 71 processos conclusos nas tarefas de alvará, homologação de cálculo, impugnação e sentença de extinção; revisão pelo cofre do Obsidian de 27.10.2026)",
+ "versao_modulo": "0.1.0",
+ "data": "27.10.2026",
+ "normas_incluir_registro": [
+  {
+   "id": "lei-11101-art-49",
+   "referencia": "art. 49, caput, da Lei nº 11.101/2005 (créditos sujeitos à recuperação)"
+  },
+  {
+   "id": "lei-11101-art-59",
+   "referencia": "art. 59, caput, da Lei nº 11.101/2005 (novação pelo plano)"
+  },
+  {
+   "id": "lei-11101-arts-7-9-10",
+   "referencia": "arts. 7º, § 1º, 9º, II, e 10 da Lei nº 11.101/2005 (habilitação, valor até o pedido e divergência)"
+  },
+  {
+   "id": "lei-11101-arts-76-124",
+   "referencia": "arts. 76 e 124 da Lei nº 11.101/2005 (juízo da falência e juros após a decretação)"
+  },
+  {
+   "id": "stj-tema-1051",
+   "referencia": "Tema 1.051 do STJ (fato gerador como critério de sujeição do crédito à recuperação judicial)"
+  },
+  {
+   "id": "tjrj-aviso-39-2023",
+   "referencia": "Aviso nº 39/2023 do TJRJ (créditos do Grupo Oi)"
+  }
+ ]
+}

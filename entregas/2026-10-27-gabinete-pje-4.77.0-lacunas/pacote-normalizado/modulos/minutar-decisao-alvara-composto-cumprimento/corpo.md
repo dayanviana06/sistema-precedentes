@@ -20,7 +20,7 @@ Fronteiras e destino de cada hipótese vizinha:
 - Depósito integral, concordância das partes e nenhuma questão pendente → `minutar-sentenca-extincao-civel`, ramo R5 (SUP-SENT-05), sentença com alvarás.
 - Fixação, impugnação ou arbitramento de honorários periciais, nomeação de perito → `minutar-decisao-prova-pericia`, ramos PRV-04 a PRV-06. O alvará do perito já com valor fixado e depositado entra aqui (ALC-04).
 - Óbito de parte e habilitação de sucessores → módulo irmão `minutar-decisao-habilitacao-herdeiros-cumprimento` (ramos HAB-01 a HAB-04); alvarás aos sucessores depois da habilitação seguem o HAB-04, que remete ao ALC-04.
-- Cumprimento nos Juizados Especiais → `minutar-cumprimento-juizado-especial`. Executada em recuperação judicial ou falência → portão 2 de `minutar-decisao-penhora-alvara`.
+- Cumprimento nos Juizados Especiais → `minutar-cumprimento-juizado-especial`. Executada em recuperação judicial ou falência → `minutar-decisao-executado-recuperacao-judicial` (regra 53, item 3, alterada em 27.10.2026).
 
 ## Portões
 

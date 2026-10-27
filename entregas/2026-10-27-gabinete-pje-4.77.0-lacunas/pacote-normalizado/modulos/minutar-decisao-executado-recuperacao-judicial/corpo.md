@@ -24,7 +24,7 @@ Não usar, com o destino de cada hipótese vizinha:
 
 ## Portões
 
-0.  Regra 53, item 3 ("executada em recuperação judicial ou falência — não minutar"). Este módulo é o destino do portão para o magistrado que decidir minutar. O cofre mostra que o magistrado já decidiu e despachou esses casos (RJU-05, RJU-06 e RJU-07 reproduzem os atos); a divergência entre a regra 53 e a prática fica registrada no ponto B do ramo e no relatório, sem alterar a regra. Se qualquer portão abaixo falhar, não se minuta: ficha de devolução (regra 53) com o que falta, as duas vias possíveis e o Id. de cada prova.
+0.  Regra 53, item 3, na redação de 27.10.2026: a executada em recuperação judicial ou falência no cumprimento do rito comum é minutada por este módulo, por autorização do magistrado, que já decidia e despachava esses casos (RJU-05, RJU-06 e RJU-07 reproduzem os atos do cofre). Se qualquer portão abaixo falhar, não se minuta: ficha de devolução (regra 53) com o que falta, as duas vias possíveis e o Id. de cada prova.
 1.  Recuperação judicial provada nos autos, com Id.: decisão de deferimento do processamento (data), data do pedido, e, havendo, decisão de homologação ou concessão do plano. Documento determinante ilegível, não lido ou cujo conteúdo dos anexos não foi aberto: via dos autos baixados (regra 35) ou corroboração por fonte independente (regra 38); sem uma delas, não se afirma a data do pedido nem o plano.
 2.  Rito comum provado (capa, classe, sentença). Dúvida: AGUARDANDO CONFIRMAÇÃO. Cadastro de Juizado com título de rito comum: → `decidir-rito-e-competencia-do-cadastro`.
 3.  Fato gerador do crédito com data e Id. (contrato, evento danoso, ato ilícito, sentença que o declara). Sem a data, ou com fato gerador contínuo ou em vários eventos, a natureza não se decide: ficha de devolução, ou RJU-01 com ponto C reforçado (divisão do crédito por evento).
@@ -100,7 +100,7 @@ Fecho, assinatura e pontos conforme o esqueleto fixo da decisão.
 - 🟡 **==A1 — Tema 1.051/STJ e arts. 49 e 59 da Lei 11.101/2005: sem item no registro. Conferir em fonte oficial (pesquisador-vigencia) antes de assinar.==**
 - 🟡 **==A2 — Art. 6º da Lei 11.101/2005: norma confirmada no registro, sem o teor. Transcrição literal a conferir no original.==**
 - 🟢 **==B1 — Ato sem modelo do gabinete: esqueleto 0.1.0.==**
-- 🟡 **==B2 — Regra 53, item 3 ("não minutar"): divergente da prática do cofre, que decide e despacha esses casos (atos 9000371-30, 0800160-02, 0001403-92, 0001120-93, 0000604-44 e 0800162-06). Confirmar a aplicação.==**
+- 🟢 **==B2 — Regra 53, item 3, alterada em 27.10.2026: o magistrado autorizou este módulo para a executada em recuperação judicial, como já fazia nos atos do cofre.==**
 - 🟡 **==A3 — Aviso nº 39/2023 do TJRJ (Grupo Oi): fora do registro. Conferir em fonte oficial.==**
 - 🔴 **==C1 — DECISÃO RESERVADA: natureza do crédito. Via: concursal (fato gerador anterior ao pedido). Alternativa: extraconcursal.==**
 - 🔴 **==C2 — DECISÃO RESERVADA: efeito da novação do plano sobre o cumprimento. Via: pagamento no juízo da recuperação. Alternativa: rejeitar a novação.==**
@@ -347,7 +347,7 @@ Cumpra-se. Intimem-se.
 - 🟡 **==A1 — Art. 76 da Lei 11.101/2005: sem item no registro (só o art. 6º). Confirmar em fonte oficial.==**
 - 🟡 **==A2 — Data da decretação da falência: o cofre tem 03/02/2020 e 03/02/2025 para o mesmo processo. Conferir no documento.==**
 - 🟢 **==B1 — Prazo de 15 dias e a alternativa "extinção ou suspensão" na inércia: copiados do ato do cofre.==**
-- 🟡 **==B2 — Regra 53, item 3 ("não minutar" falência): divergente do ato do cofre. Confirmar a aplicação.==**
+- 🟢 **==B2 — Regra 53, item 3, alterada em 27.10.2026: o magistrado autorizou este módulo para a executada falida.==**
 - 🔴 **==C1 — DECISÃO RESERVADA: na inércia ou após a manifestação, extinção (RJU-07) ou suspensão. O cofre tem a extinção com certidão no mesmo processo (sentença de 31.08.2026).==**
 
 **Encaminhamento seguinte.** Manifestada a concordância com a certidão, RJU-07 (sentença de extinção). Inércia: certidão da Secretaria e conclusão, por decisão do magistrado.
