@@ -29,3 +29,7 @@ Os testes do núcleo registram 2 falhas em 130, ambas nos testes de Drive (`Test
 ## Instalação
 
 Instale os dois arquivos `.plugin` desta pasta e desative as versões anteriores (gabinete-pje 4.75.0 ou 4.76.0 e fábrica 4.63.1 ou 4.64.0). A pasta `pacote-normalizado` só serve para reinstalação ou auditoria e não precisa ser instalada. Os textos dos ramos citam, na linha "Cofre", números de processos e Ids. de atos do juízo, tal como vieram no pacote; as minutas fictícias de autoteste não trazem dados reais.
+
+## Versão posterior
+
+Os arquivos `.plugin` desta entrega foram substituídos pelos da pasta `entregas/2026-10-27-gabinete-pje-4.78.0-triagem-blocos/` (gabinete-pje 4.78.0 e fábrica 4.66.0), que contêm também tudo o que está descrito aqui.
