@@ -1,0 +1,60 @@
+{
+ "prefixo": "RCQ",
+ "skill": "minutar-decisao-recusa-contadoria-e-quem-calcula",
+ "especie": "D",
+ "titulo": "Recusa da Contadoria e quem calcula",
+ "descricao": "Decide, em ato próprio (versão 0.1, esqueleto sem modelo vigente do gabinete), quem calcula e como o cumprimento prossegue quando a Contadoria devolve os autos sem cálculo e a decisão de rito e cadastro não esgota o impasse: recusa persistente da Contadoria Judicial Única em processo de rito comum provado, com a conta do exequente sem manifestação da Fazenda (RCQ-01); cadastro de Juizado com título de Juizado e remessa à Contadoria Judicial Local (RCQ-02); conta atualizada do exequente com índice diverso do regime da decisão de parâmetros (RCQ-03); execução de título extrajudicial contra a Fazenda com cadastro de Juizado Cível (RCQ-04). Use quando o usuário disser: \"a Contadoria recusou de novo\", \"quem faz o cálculo\", \"recusa persistente da Contadoria\", \"conta do exequente com índice errado\", \"execução extrajudicial contra o município no Juizado\".",
+ "familias": [
+  "AE",
+  "AD",
+  "AH"
+ ],
+ "familia": "AE",
+ "tipo": "DEC",
+ "complexidade": 2,
+ "sit_id": "recusa-contadoria-quem-calcula",
+ "situacao": "Contadoria (Única ou Local) devolveu os autos sem cálculo, já existindo decisão de parâmetros, e a decisão de rito e cadastro não esgota o impasse: recusa persistente em rito comum provado com conta do exequente sem manifestação da Fazenda; cadastro e título de Juizado (Contadoria Judicial Local); conta do exequente com índice diverso do regime fixado; execução de título extrajudicial contra a Fazenda com cadastro de Juizado Cível",
+ "marcos": [
+  "decisão de parâmetros com Id.",
+  "devolução da Contadoria sem cálculo, com o motivo declarado (uma ou mais vezes)",
+  "certidão da Secretaria sobre o procedimento ou decisão RIT-A anterior",
+  "conta atualizada do exequente e intimação da Fazenda com decurso"
+ ],
+ "urgencias": [
+  "processo antigo",
+  "RPV ou precatório pendente de expedição"
+ ],
+ "ato_cabivel": "decisão sobre recusa da Contadoria",
+ "capitulos": [
+  "órgão que calcula e base do crédito após recusa da Contadoria"
+ ],
+ "especialistas": [
+  "calculista",
+  "pesquisador-vigencia"
+ ],
+ "tabela": [
+  "Contadoria devolveu sem cálculo e o impasse persiste depois do RIT-A: recusa persistente com conta do exequente sem manifestação da Fazenda, título de Juizado (Contadoria Local), índice divergente do regime, execução extrajudicial contra a Fazenda com cadastro de Juizado (27.10.2026)",
+  "Esqueleto 0.1 sem modelo: RCQ-01 a RCQ-04"
+ ],
+ "gatilhos": [
+  [
+   "recusa da contadoria",
+   "contadoria recusou",
+   "quem calcula"
+  ]
+ ],
+ "exemplo_nome": "AE_DEC_recusa da contadoria_conta do exequente como base",
+ "origem": "pacote de lacunas de 27.10.2026 (triagem de cobertura de 71 processos conclusos nas tarefas de alvará, homologação de cálculo, impugnação e sentença de extinção; revisão pelo cofre do Obsidian de 27.10.2026)",
+ "versao_modulo": "0.1.0",
+ "data": "27.10.2026",
+ "normas_incluir_registro": [
+  {
+   "id": "cpc-910",
+   "referencia": "art. 910 do CPC (execução contra a Fazenda Pública fundada em título extrajudicial)"
+  },
+  {
+   "id": "lei-9099-arts-3-8",
+   "referencia": "arts. 3º, § 1º, II, e 8º da Lei nº 9.099/1995 (execução de título extrajudicial e partes no Juizado)"
+  }
+ ]
+}

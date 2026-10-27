@@ -1,0 +1,69 @@
+{
+ "prefixo": "SEQ",
+ "skill": "minutar-decisao-sequestro-rpv-e-alvara-fazenda",
+ "especie": "DP",
+ "titulo": "Sequestro por RPV não paga e alvará do numerário sequestrado",
+ "descricao": "Minuta (versão 0.1, esqueleto sem modelo vigente do gabinete) o que vem depois do sequestro de verbas públicas por RPV não paga já determinado: despacho quando a transferência para a conta judicial não foi confirmada (SEQ-01); sequestro transferido com pedido do ente de liberar excedente, conferência do valor devido e alvará (SEQ-02); sequestro parcial no Juizado da Fazenda com atualização unilateral divergente (SEQ-03); pedido do ente de limitar ao teto da RPV, converter em precatório ou obter renúncia ao excedente com bloqueio já efetuado (SEQ-04). Use quando o usuário disser: \"sequestro da RPV\", \"alvará do valor sequestrado\", \"devolver o excedente ao município\", \"sequestro parcial\", \"o município pede precatório depois do bloqueio\".",
+ "familias": [
+  "AE"
+ ],
+ "familia": "AE",
+ "tipo": "DEC",
+ "complexidade": 2,
+ "sit_id": "sequestro-rpv-alvara-fazenda",
+ "situacao": "Execução contra a Fazenda Pública com RPV entregue e não paga e sequestro já determinado: transferência para a conta judicial não confirmada, numerário transferido com pedido de alvará ou de liberação de excedente, sequestro parcial no Juizado da Fazenda com atualização unilateral divergente, pedido do ente de teto, conversão em precatório ou renúncia com bloqueio efetuado; a ordem de sequestro em si continua de 'penhora-bloqueio' (PA-09)",
+ "marcos": [
+  "RPV entregue e prazo decorrido sem pagamento, com Id.",
+  "decisão que determinou o sequestro, com Id.",
+  "extrato do bloqueio ou da transferência para a conta judicial",
+  "pedido do exequente ou do ente sobre o numerário"
+ ],
+ "urgencias": [
+  "RPV vencida",
+  "valor bloqueado sem destinação",
+  "prioridade legal"
+ ],
+ "ato_cabivel": "decisão de sequestro de RPV e alvará",
+ "capitulos": [
+  "destino do numerário sequestrado por RPV não paga"
+ ],
+ "especialistas": [
+  "calculista",
+  "pesquisador-vigencia"
+ ],
+ "tabela": [
+  "Depois do sequestro por RPV não paga: transferência não confirmada, alvará e devolução do excedente, sequestro parcial no Juizado da Fazenda, teto, conversão ou renúncia com bloqueio feito (27.10.2026)",
+  "Esqueleto 0.1 sem modelo: SEQ-01 (despacho) a SEQ-04"
+ ],
+ "tipo_por_ramo": {
+  "SEQ-01": "DESP",
+  "SEQ-02": "DEC",
+  "SEQ-03": "DEC",
+  "SEQ-04": "DEC"
+ },
+ "gatilhos": [
+  [
+   "sequestro de rpv",
+   "valor sequestrado",
+   "numerário sequestrado"
+  ]
+ ],
+ "exemplo_nome": "AE_DEC_sequestro de rpv_alvará e excedente",
+ "origem": "pacote de lacunas de 27.10.2026 (triagem de cobertura de 71 processos conclusos nas tarefas de alvará, homologação de cálculo, impugnação e sentença de extinção; revisão pelo cofre do Obsidian de 27.10.2026)",
+ "versao_modulo": "0.1.0",
+ "data": "27.10.2026",
+ "normas_incluir_registro": [
+  {
+   "id": "cpc-373-i-ii",
+   "referencia": "art. 373, I e II, do CPC (ônus da prova)"
+  },
+  {
+   "id": "lei-8906-art-23",
+   "referencia": "art. 23 da Lei nº 8.906/1994 (honorários de sucumbência pertencem ao advogado)"
+  },
+  {
+   "id": "cf-100-p6",
+   "referencia": "art. 100, § 6º, da Constituição (sequestro de precatório)"
+  }
+ ]
+}

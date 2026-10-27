@@ -1,0 +1,49 @@
+{
+ "prefixo": "CIS",
+ "skill": "minutar-despacho-decisao-cumprimento-casos-isolados",
+ "especie": "DP",
+ "titulo": "Casos isolados do cumprimento de sentença",
+ "descricao": "Reúne, em versão 0.1 provisória, dois atos de cumprimento de sentença sem ramo próprio: decisão que dá cumprimento à decisão do Tribunal em agravo que cassa decisão posterior do juízo e manda arquivar, quando já há cálculo da Contadoria juntado e as partes divergem (CIS-01); despacho que recebe o novo requerimento de cumprimento protocolado depois do indeferimento da inicial do cumprimento anterior e intima o executado para pagar (CIS-02). Use quando o usuário disser: \"cumprir o acórdão do agravo que mandou arquivar\", \"novo cumprimento depois do indeferimento\", \"cumprimento reapresentado\".",
+ "familias": [
+  "AD"
+ ],
+ "familia": "AD",
+ "tipo": "DEC",
+ "complexidade": 2,
+ "sit_id": "cumprimento-casos-isolados",
+ "situacao": "Cumprimento contra executado particular em caso isolado: decisão do Tribunal em agravo que anulou decisões posteriores à extinção e mandou arquivar, com cálculo da Contadoria juntado e divergência das partes; novo requerimento de cumprimento depois de sentença que indeferiu a inicial do cumprimento anterior",
+ "marcos": [
+  "sentença de extinção ou de indeferimento da inicial do cumprimento, com Id.",
+  "decisão ou acórdão do Tribunal em agravo, com Id., ou novo requerimento com demonstrativo",
+  "cálculo da Contadoria juntado e manifestações, no CIS-01"
+ ],
+ "urgencias": [
+  "processo antigo"
+ ],
+ "ato_cabivel": "ato isolado de cumprimento",
+ "capitulos": [
+  "cumprimento de decisão do Tribunal que manda arquivar e recebimento de novo cumprimento após indeferimento"
+ ],
+ "especialistas": [
+  "pesquisador-vigencia"
+ ],
+ "tabela": [
+  "Casos isolados do cumprimento: acórdão em agravo que cassa decisão posterior e manda arquivar com cálculo juntado; novo cumprimento após indeferimento da inicial do anterior (27.10.2026)",
+  "Esqueleto 0.1 provisório: CIS-01 e CIS-02 (despacho)"
+ ],
+ "tipo_por_ramo": {
+  "CIS-01": "DEC",
+  "CIS-02": "DESP"
+ },
+ "gatilhos": [],
+ "exemplo_nome": "AD_DEC_cumprimento de acórdão de agravo_coisa julgada e arquivamento",
+ "origem": "pacote de lacunas de 27.10.2026 (triagem de cobertura de 71 processos conclusos nas tarefas de alvará, homologação de cálculo, impugnação e sentença de extinção; revisão pelo cofre do Obsidian de 27.10.2026)",
+ "versao_modulo": "0.1.0",
+ "data": "27.10.2026",
+ "normas_incluir_registro": [
+  {
+   "id": "cpc-995",
+   "referencia": "art. 995 do CPC (recurso sem efeito suspensivo)"
+  }
+ ]
+}

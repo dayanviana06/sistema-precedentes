@@ -1,0 +1,397 @@
+{
+ "exclusoes_vizinhas": {
+  "rito-competencia-cadastro": [
+   "recusa da Contadoria que persiste depois do RIT-A, título de Juizado com Contadoria Local, conta com índice divergente do regime ou execução extrajudicial contra a Fazenda com cadastro de Juizado → recusa-contadoria-quem-calcula"
+  ],
+  "pos-contadoria": [
+   "devolução sem cálculo em que o impasse é o órgão que calcula ou a base do crédito, não pendência de decisão → recusa-contadoria-quem-calcula; substituição processual por sindicato com devolução sem cálculo → fazenda-casos-especiais"
+  ],
+  "homologacao-calculos": [
+   "impugnação ou discordância delimitada ao cálculo da Contadoria Judicial Única a julgar antes de homologar (executado particular) → impugnacao-com-homologacao"
+  ],
+  "cumprimento-contadoria": [
+   "cálculo da Contadoria Judicial Única já juntado com impugnação delimitada a julgar e homologar no mesmo ato → impugnacao-com-homologacao",
+   "exceção de pré-executividade contra o bloqueio com multa do art. 523 ou compensação, embargos à penhora após homologação, multas dos arts. 81 e 774 → excecao-preexecutividade-embargos-penhora"
+  ],
+  "alvara-levantamento": [
+   "alvará condicionado a questão prévia (depósito intempestivo e multa do art. 523, excedente a restituir com homologação, alegação de quitação, vários beneficiários dependentes de decisão) → alvara-composto-cumprimento",
+   "habilitação de herdeiros no cumprimento contra particular, com ou sem alvarás aos sucessores → habilitacao-herdeiros-cumprimento",
+   "numerário de sequestro por RPV não paga → sequestro-rpv-alvara-fazenda"
+  ],
+  "penhora-bloqueio": [
+   "sequestro já determinado: transferência não confirmada, alvará e excedente, sequestro parcial, teto ou conversão com bloqueio feito → sequestro-rpv-alvara-fazenda",
+   "exceção de pré-executividade contra o bloqueio com multa do art. 523 ou compensação de depósito → excecao-preexecutividade-embargos-penhora",
+   "executada em recuperação judicial ou falência com ordem expressa do magistrado para minutar → executado-recuperacao-judicial"
+  ],
+  "fazenda-sem-impugnacao": [
+   "sentença sem reexame necessário, impugnação por coisa julgada de outra demanda ou precedente superveniente, demonstrativo viciado sem impugnação → ordem-publica-cumprimento-fazenda",
+   "título extrajudicial com defesa como impugnação, cumprimento misto, entes solidários, sindicato, cessão de crédito → fazenda-casos-especiais"
+  ],
+  "fazenda-requisitorio-incidentes": [
+   "teto, conversão em precatório ou renúncia pedidos depois de bloqueio por sequestro → sequestro-rpv-alvara-fazenda (SEQ-04)"
+  ],
+  "reservado-ao-gabinete-cumprimento": [
+   "executada em recuperação judicial ou falência com ordem expressa do magistrado para minutar → executado-recuperacao-judicial (a regra 53, item 3, continua a valer sem a ordem)",
+   "reexame necessário não examinado contra a Fazenda → ordem-publica-cumprimento-fazenda (OPF-01)"
+  ],
+  "cumprimento-residual": [
+   "exceção de pré-executividade com multa do art. 523 ou compensação contra o bloqueio → excecao-preexecutividade-embargos-penhora; habilitação de herdeiros no cumprimento contra particular → habilitacao-herdeiros-cumprimento; casos isolados (acórdão em agravo que manda arquivar, novo cumprimento após indeferimento) → cumprimento-casos-isolados"
+  ]
+ },
+ "nao_cobre_vizinhas": {
+  "decidir-rito-e-competencia-do-cadastro": [
+   {
+    "hipotese": "recusa da Contadoria que persiste depois do RIT-A ou impasse sobre quem calcula e a base do crédito",
+    "destino": "minutar-decisao-recusa-contadoria-e-quem-calcula"
+   }
+  ],
+  "minutar-decisao-complementar-pos-contadoria": [
+   {
+    "hipotese": "devolução sem cálculo cujo impasse é o órgão que calcula ou a base do crédito",
+    "destino": "minutar-decisao-recusa-contadoria-e-quem-calcula"
+   }
+  ],
+  "minutar-homologacao-calculos": [
+   {
+    "hipotese": "impugnação delimitada ao cálculo da Contadoria a julgar antes da homologação (executado particular)",
+    "destino": "minutar-decisao-impugnacao-com-homologacao"
+   }
+  ],
+  "contadoria-diagnostico-e-minutas": [
+   {
+    "hipotese": "impugnação delimitada ao cálculo da Contadoria já juntado, julgada e homologada no mesmo ato",
+    "destino": "minutar-decisao-impugnacao-com-homologacao"
+   },
+   {
+    "hipotese": "exceção de pré-executividade contra o bloqueio com multa do art. 523, embargos à penhora, multas dos arts. 81 e 774",
+    "destino": "minutar-decisao-excecao-preexecutividade-e-embargos-penhora"
+   }
+  ],
+  "minutar-decisao-penhora-alvara": [
+   {
+    "hipotese": "alvará condicionado a questão prévia (multa do art. 523, excedente, natureza do depósito, vários beneficiários)",
+    "destino": "minutar-decisao-alvara-composto-cumprimento"
+   },
+   {
+    "hipotese": "numerário de sequestro por RPV não paga (transferência, alvará, excedente, sequestro parcial, teto com bloqueio)",
+    "destino": "minutar-decisao-sequestro-rpv-e-alvara-fazenda"
+   },
+   {
+    "hipotese": "exceção de pré-executividade contra o bloqueio com multa do art. 523 ou compensação",
+    "destino": "minutar-decisao-excecao-preexecutividade-e-embargos-penhora"
+   }
+  ],
+  "minutar-sem-modelo-cumprimento-sentenca": [
+   {
+    "hipotese": "habilitação de herdeiros no cumprimento contra particular",
+    "destino": "minutar-decisao-habilitacao-herdeiros-cumprimento"
+   },
+   {
+    "hipotese": "acórdão em agravo que manda arquivar com cálculo juntado; novo cumprimento após indeferimento",
+    "destino": "minutar-despacho-decisao-cumprimento-casos-isolados"
+   }
+  ],
+  "minutar-fazenda-impugnacao-intempestiva-ausente-titulo-ambiguo": [
+   {
+    "hipotese": "reexame necessário omitido, coisa julgada de outra demanda, precedente superveniente ou demonstrativo viciado sem impugnação",
+    "destino": "minutar-decisao-ordem-publica-cumprimento-fazenda"
+   },
+   {
+    "hipotese": "título extrajudicial com defesa como impugnação, cumprimento misto, entes solidários, sindicato, cessão de crédito",
+    "destino": "minutar-decisao-fazenda-casos-especiais"
+   }
+  ]
+ },
+ "normas_pendentes": [
+  {
+   "id": "cpc-219",
+   "referencia": "art. 219 do CPC (contagem de prazos em dias úteis)",
+   "modulos": [
+    "ALC"
+   ]
+  },
+  {
+   "id": "cpc-373-i-ii",
+   "referencia": "art. 373, I e II, do CPC (ônus da prova)",
+   "modulos": [
+    "ALC",
+    "OPF",
+    "SEQ",
+    "FZE",
+    "IHO",
+    "EPE"
+   ]
+  },
+  {
+   "id": "lei-8906-art-23",
+   "referencia": "art. 23 da Lei nº 8.906/1994 (honorários de sucumbência pertencem ao advogado)",
+   "modulos": [
+    "ALC",
+    "HAB",
+    "SEQ",
+    "FZE"
+   ]
+  },
+  {
+   "id": "cnj-recomendacao-159-2024",
+   "referencia": "Recomendação CNJ nº 159/2024 (conta de titularidade da parte)",
+   "modulos": [
+    "ALC"
+   ]
+  },
+  {
+   "id": "cc-275-277",
+   "referencia": "arts. 275 e 277 do Código Civil (devedores solidários)",
+   "modulos": [
+    "ALC"
+   ]
+  },
+  {
+   "id": "cc-940",
+   "referencia": "art. 940 do Código Civil (cobrança de dívida já paga ou de valor maior que o devido)",
+   "modulos": [
+    "EPE"
+   ]
+  },
+  {
+   "id": "cpc-1015-pu",
+   "referencia": "art. 1.015, parágrafo único, do CPC (agravo de instrumento na fase de cumprimento)",
+   "modulos": [
+    "EPE"
+   ]
+  },
+  {
+   "id": "stj-tema-410",
+   "referencia": "Tema 410 do STJ (honorários na impugnação; número, tese e situação a confirmar)",
+   "modulos": [
+    "EPE"
+   ]
+  },
+  {
+   "id": "stj-sumula-393",
+   "referencia": "Súmula 393 do STJ (exceção de pré-executividade)",
+   "modulos": [
+    "EPE"
+   ]
+  },
+  {
+   "id": "stj-resp-2161605",
+   "referencia": "REsp 2.161.605/SP do STJ (depósito em garantia e multa do art. 523)",
+   "modulos": [
+    "EPE"
+   ]
+  },
+  {
+   "id": "cpc-919",
+   "referencia": "art. 919 do CPC (efeito suspensivo dos embargos)",
+   "modulos": [
+    "EPE",
+    "FZE"
+   ]
+  },
+  {
+   "id": "cpc-774-ii-139-iii-777",
+   "referencia": "arts. 774, II e parágrafo único, 139, III, e 777 do CPC (ato atentatório e multas)",
+   "modulos": [
+    "EPE"
+   ]
+  },
+  {
+   "id": "lei-11101-art-49",
+   "referencia": "art. 49, caput, da Lei nº 11.101/2005 (créditos sujeitos à recuperação)",
+   "modulos": [
+    "RJU"
+   ]
+  },
+  {
+   "id": "lei-11101-art-59",
+   "referencia": "art. 59, caput, da Lei nº 11.101/2005 (novação pelo plano)",
+   "modulos": [
+    "RJU"
+   ]
+  },
+  {
+   "id": "lei-11101-arts-7-9-10",
+   "referencia": "arts. 7º, § 1º, 9º, II, e 10 da Lei nº 11.101/2005 (habilitação, valor até o pedido e divergência)",
+   "modulos": [
+    "RJU"
+   ]
+  },
+  {
+   "id": "lei-11101-arts-76-124",
+   "referencia": "arts. 76 e 124 da Lei nº 11.101/2005 (juízo da falência e juros após a decretação)",
+   "modulos": [
+    "RJU"
+   ]
+  },
+  {
+   "id": "stj-tema-1051",
+   "referencia": "Tema 1.051 do STJ (fato gerador como critério de sujeição do crédito à recuperação judicial)",
+   "modulos": [
+    "RJU"
+   ]
+  },
+  {
+   "id": "tjrj-aviso-39-2023",
+   "referencia": "Aviso nº 39/2023 do TJRJ (créditos do Grupo Oi)",
+   "modulos": [
+    "RJU"
+   ]
+  },
+  {
+   "id": "cpc-910",
+   "referencia": "art. 910 do CPC (execução contra a Fazenda Pública fundada em título extrajudicial)",
+   "modulos": [
+    "RCQ",
+    "FZE"
+   ]
+  },
+  {
+   "id": "cpc-914-918-920",
+   "referencia": "arts. 914, 918 e 920 do CPC (embargos à execução)",
+   "modulos": [
+    "FZE"
+   ]
+  },
+  {
+   "id": "cpc-239-p1-242-p3-277",
+   "referencia": "art. 239, § 1º, art. 242, § 3º, e art. 277 do CPC",
+   "modulos": [
+    "FZE"
+   ]
+  },
+  {
+   "id": "cpc-783-784",
+   "referencia": "arts. 783 e 784 do CPC (título executivo extrajudicial)",
+   "modulos": [
+    "FZE"
+   ]
+  },
+  {
+   "id": "cc-397-405",
+   "referencia": "arts. 397 e 405 do Código Civil (mora e termo inicial dos juros)",
+   "modulos": [
+    "FZE"
+   ]
+  },
+  {
+   "id": "cf-100-p13-p14",
+   "referencia": "art. 100, §§ 13 e 14, da Constituição (cessão de créditos em precatórios)",
+   "modulos": [
+    "FZE"
+   ]
+  },
+  {
+   "id": "tjma-resol-gp-17-2023",
+   "referencia": "Resolução GP nº 17/2023 do TJMA (arts. 8º, 66 e 68; cessão de crédito em requisitórios)",
+   "modulos": [
+    "FZE"
+   ]
+  },
+  {
+   "id": "stj-resp-1091443",
+   "referencia": "REsp 1.091.443/SP do STJ (cessão de precatório sem anuência do devedor)",
+   "modulos": [
+    "FZE"
+   ]
+  },
+  {
+   "id": "cpc-75-vii",
+   "referencia": "art. 75, VII, do CPC (espólio representado pelo inventariante)",
+   "modulos": [
+    "HAB"
+   ]
+  },
+  {
+   "id": "cpc-76",
+   "referencia": "art. 76 do CPC (irregularidade de representação)",
+   "modulos": [
+    "HAB"
+   ]
+  },
+  {
+   "id": "cpc-178-ii",
+   "referencia": "art. 178, II, do CPC (intervenção do Ministério Público com incapaz)",
+   "modulos": [
+    "HAB"
+   ]
+  },
+  {
+   "id": "cpc-796-cc-1792",
+   "referencia": "art. 796 do CPC e art. 1.792 do Código Civil (responsabilidade dos sucessores nas forças da herança)",
+   "modulos": [
+    "HAB"
+   ]
+  },
+  {
+   "id": "cc-682-ii",
+   "referencia": "art. 682, II, do Código Civil (extinção do mandato pela morte)",
+   "modulos": [
+    "HAB"
+   ]
+  },
+  {
+   "id": "cc-943",
+   "referencia": "art. 943 do Código Civil (transmissão do direito de exigir reparação)",
+   "modulos": [
+    "HAB"
+   ]
+  },
+  {
+   "id": "cpc-836",
+   "referencia": "art. 836 do CPC (valores ínfimos)",
+   "modulos": [
+    "IHO"
+   ]
+  },
+  {
+   "id": "lei-12153-art-11",
+   "referencia": "art. 11 da Lei nº 12.153/2009 (reexame necessário nos Juizados da Fazenda)",
+   "modulos": [
+    "OPF"
+   ]
+  },
+  {
+   "id": "cpc-502",
+   "referencia": "art. 502 do CPC (coisa julgada material)",
+   "modulos": [
+    "OPF"
+   ]
+  },
+  {
+   "id": "cpc-535-iii-p5-p8",
+   "referencia": "art. 535, III e §§ 5º a 8º, do CPC (inexigibilidade por decisão do STF)",
+   "modulos": [
+    "OPF"
+   ]
+  },
+  {
+   "id": "cpc-218-p3",
+   "referencia": "art. 218, § 3º, do CPC (prazo supletivo de 5 dias)",
+   "modulos": [
+    "OPF"
+   ]
+  },
+  {
+   "id": "lei-9099-arts-3-8",
+   "referencia": "arts. 3º, § 1º, II, e 8º da Lei nº 9.099/1995 (execução de título extrajudicial e partes no Juizado)",
+   "modulos": [
+    "RCQ"
+   ]
+  },
+  {
+   "id": "cf-100-p6",
+   "referencia": "art. 100, § 6º, da Constituição (sequestro de precatório)",
+   "modulos": [
+    "SEQ"
+   ]
+  },
+  {
+   "id": "cpc-995",
+   "referencia": "art. 995 do CPC (recurso sem efeito suspensivo)",
+   "modulos": [
+    "CIS"
+   ]
+  }
+ ]
+}

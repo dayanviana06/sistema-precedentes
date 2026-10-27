@@ -1,0 +1,58 @@
+{
+ "prefixo": "IHO",
+ "skill": "minutar-decisao-impugnacao-com-homologacao",
+ "especie": "D",
+ "titulo": "Impugnação julgada e cálculo homologado no mesmo ato",
+ "descricao": "Julga, em ato único (versão 0.1, esqueleto sem modelo vigente do gabinete), a impugnação já delimitada ao cálculo da Contadoria Judicial Única no cumprimento contra executado particular e, em seguida, homologa o cálculo, com o tratamento do depósito parcial e o alvará do incontroverso: executado discorda do cálculo com decurso e depósito anterior (IHO-01); impugnação do exequente pelos limites do título (IHO-02); cálculo divergente do parâmetro fixado (IHO-03); impugnação não reiterada após emenda, com depósito de garantia (IHO-04); impugnação sem custas com cálculo já juntado, cancelamento e homologação (IHO-05). Use quando o usuário disser: \"decida a impugnação e homologue\", \"o banco discorda do cálculo da Contadoria\", \"impugnação ao cálculo da Contadoria\", \"homologação com depósito parcial\".",
+ "familias": [
+  "AD",
+  "AC"
+ ],
+ "familia": "AD",
+ "tipo": "DEC",
+ "complexidade": 2,
+ "sit_id": "impugnacao-com-homologacao",
+ "situacao": "Rito comum, executado particular: cálculo da Contadoria Judicial Única já juntado, impugnação ou discordância delimitada (do executado ou do exequente), partes intimadas e prazo decorrido; o juiz julga a impugnação e homologa no mesmo ato, com depósito parcial, garantia ou impugnação sem custas",
+ "marcos": [
+  "cálculo da Contadoria Judicial Única com Id.",
+  "impugnação ou discordância delimitada ao cálculo, com Id.",
+  "intimação das partes sobre o cálculo e decurso ou manifestação de todas",
+  "depósito parcial ou de garantia, quando houver"
+ ],
+ "urgencias": [
+  "prioridade legal",
+  "depósito judicial parado"
+ ],
+ "ato_cabivel": "decisão de impugnação com homologação",
+ "capitulos": [
+  "julgamento da impugnação ao cálculo da Contadoria seguido de homologação"
+ ],
+ "especialistas": [
+  "calculista",
+  "pesquisador-vigencia"
+ ],
+ "tabela": [
+  "Impugnação delimitada ao cálculo da Contadoria Judicial Única (executado ou exequente), cálculo divergente do parâmetro, impugnação não reiterada com garantia, impugnação sem custas com cálculo juntado: julgamento e homologação no mesmo ato (27.10.2026)",
+  "Esqueleto 0.1 sem modelo: IHO-01 a IHO-05 (IHO-05 adota o modelo vigente de cancelamento)"
+ ],
+ "gatilhos": [
+  [
+   "impugnação ao cálculo da contadoria",
+   "discorda do cálculo da contadoria"
+  ]
+ ],
+ "exemplo_nome": "AD_DEC_impugnação ao cálculo da contadoria_homologação e depósito parcial",
+ "origem": "pacote de lacunas de 27.10.2026 (triagem de cobertura de 71 processos conclusos nas tarefas de alvará, homologação de cálculo, impugnação e sentença de extinção; revisão pelo cofre do Obsidian de 27.10.2026)",
+ "versao_modulo": "0.1.0",
+ "data": "27.10.2026",
+ "normas_incluir_registro": [
+  {
+   "id": "cpc-373-i-ii",
+   "referencia": "art. 373, I e II, do CPC (ônus da prova)"
+  },
+  {
+   "id": "cpc-836",
+   "referencia": "art. 836 do CPC (valores ínfimos)"
+  }
+ ]
+}

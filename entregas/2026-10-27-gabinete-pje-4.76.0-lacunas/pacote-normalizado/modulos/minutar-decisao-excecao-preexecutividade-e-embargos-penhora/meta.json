@@ -1,0 +1,86 @@
+{
+ "prefixo": "EPE",
+ "skill": "minutar-decisao-excecao-preexecutividade-e-embargos-penhora",
+ "especie": "D",
+ "titulo": "Exceção de pré-executividade, embargos à penhora e multas do cumprimento",
+ "descricao": "Decide (versão 0.1, esqueleto sem modelo vigente do gabinete) quatro oposições do executado: exceção de pré-executividade de executado particular contra o bloqueio, com multa e honorários do art. 523 depois da emenda e compensação de depósito (EPE-01); embargos à penhora opostos depois da homologação do cálculo (EPE-02); impugnação do banco com custas, depois de audiência em que foram fixadas multas dos arts. 81 e 774 do CPC (EPE-03); embargos à execução no Juizado contra astreintes de concessionária, com Súmula 410 e exorbitância (EPE-04). Use quando o usuário disser: \"exceção de pré-executividade contra o bloqueio\", \"embargos à penhora\", \"multa por recusa de proposta\", \"embargos contra astreinte no Juizado\".",
+ "familias": [
+  "AD",
+  "AC",
+  "AH"
+ ],
+ "familia": "AD",
+ "tipo": "DEC",
+ "complexidade": 2,
+ "sit_id": "excecao-preexecutividade-embargos-penhora",
+ "situacao": "Oposição do executado particular com capítulos próprios: exceção de pré-executividade contra o bloqueio com multa e honorários do art. 523 ou compensação de depósito; embargos à penhora depois da homologação do cálculo; impugnação com custas depois de audiência com multas dos arts. 81 e 774 do CPC; embargos à execução no Juizado contra astreintes de concessionária",
+ "marcos": [
+  "bloqueio ou penhora com Id. e data",
+  "peça de oposição do executado (exceção, embargos ou impugnação), com Id.",
+  "decisão de homologação ou termo de audiência com as multas, quando houver",
+  "resposta do exequente"
+ ],
+ "urgencias": [
+  "bloqueio pendente de destinação",
+  "prioridade legal"
+ ],
+ "ato_cabivel": "decisão sobre exceção de pré-executividade ou embargos à penhora",
+ "capitulos": [
+  "multa e honorários do art. 523, compensação de depósito e multas processuais em oposição do executado"
+ ],
+ "especialistas": [
+  "calculista",
+  "pesquisador-vigencia"
+ ],
+ "tabela": [
+  "Oposição do executado com capítulos próprios: exceção de pré-executividade contra o bloqueio (multa do art. 523, compensação), embargos à penhora após a homologação, multas dos arts. 81 e 774, embargos contra astreinte no Juizado (27.10.2026)",
+  "Esqueleto 0.1 sem modelo: EPE-01 a EPE-04"
+ ],
+ "familia_por_ramo": {
+  "EPE-04": "AH"
+ },
+ "gatilhos": [
+  [
+   "embargos à penhora",
+   "pré-executividade contra o bloqueio"
+  ]
+ ],
+ "exemplo_nome": "AD_DEC_exceção de pré-executividade_multa do art 523 e depósito",
+ "origem": "pacote de lacunas de 27.10.2026 (triagem de cobertura de 71 processos conclusos nas tarefas de alvará, homologação de cálculo, impugnação e sentença de extinção; revisão pelo cofre do Obsidian de 27.10.2026)",
+ "versao_modulo": "0.1.0",
+ "data": "27.10.2026",
+ "normas_incluir_registro": [
+  {
+   "id": "cpc-373-i-ii",
+   "referencia": "art. 373, I e II, do CPC (ônus da prova)"
+  },
+  {
+   "id": "cc-940",
+   "referencia": "art. 940 do Código Civil (cobrança de dívida já paga ou de valor maior que o devido)"
+  },
+  {
+   "id": "cpc-1015-pu",
+   "referencia": "art. 1.015, parágrafo único, do CPC (agravo de instrumento na fase de cumprimento)"
+  },
+  {
+   "id": "stj-tema-410",
+   "referencia": "Tema 410 do STJ (honorários na impugnação; número, tese e situação a confirmar)"
+  },
+  {
+   "id": "stj-sumula-393",
+   "referencia": "Súmula 393 do STJ (exceção de pré-executividade)"
+  },
+  {
+   "id": "stj-resp-2161605",
+   "referencia": "REsp 2.161.605/SP do STJ (depósito em garantia e multa do art. 523)"
+  },
+  {
+   "id": "cpc-919",
+   "referencia": "art. 919 do CPC (efeito suspensivo dos embargos)"
+  },
+  {
+   "id": "cpc-774-ii-139-iii-777",
+   "referencia": "arts. 774, II e parágrafo único, 139, III, e 777 do CPC (ato atentatório e multas)"
+  }
+ ]
+}

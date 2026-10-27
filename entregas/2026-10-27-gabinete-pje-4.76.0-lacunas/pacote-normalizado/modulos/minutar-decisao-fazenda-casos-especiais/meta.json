@@ -1,0 +1,101 @@
+{
+ "prefixo": "FZE",
+ "skill": "minutar-decisao-fazenda-casos-especiais",
+ "especie": "D",
+ "titulo": "Casos especiais de execução contra a Fazenda Pública",
+ "descricao": "Minuta a decisão (versão 0.1; FZE-05 adota o modelo vigente do gabinete) em cinco casos de execução com a Fazenda Pública como parte: execução de título extrajudicial cuja defesa veio como impugnação (FZE-01); cumprimento misto, com executado particular e Fazenda em um só cumprimento e cálculos separados (FZE-02); astreintes e danos contra entes solidários, um sem impugnação e outro impugnando só a multa (FZE-03); substituição processual por sindicato com devolução da Contadoria sem cálculo (FZE-04); homologação de cessão de crédito de requisitório e informação ao Tribunal (FZE-05). Use quando o usuário disser: \"execução extrajudicial contra o município\", \"cumprimento misto\", \"astreinte contra Estado e Município\", \"sindicato substituto processual\", \"cessão de crédito do precatório\".",
+ "familias": [
+  "AE",
+  "AD"
+ ],
+ "familia": "AE",
+ "tipo": "DEC",
+ "complexidade": 3,
+ "sit_id": "fazenda-casos-especiais",
+ "situacao": "Execução com a Fazenda Pública como parte em caso especial: título extrajudicial com defesa apresentada como impugnação; cumprimento misto contra particular e Fazenda com cálculos separados; astreintes e danos contra entes solidários com impugnação só da multa; substituição processual por sindicato com devolução da Contadoria sem cálculo; homologação de cessão de crédito de requisitório",
+ "marcos": [
+  "título (judicial ou extrajudicial) e defesa da Fazenda, com Id.",
+  "cálculos ou demonstrativos por executado",
+  "devolução da Contadoria, quando houver",
+  "escritura de cessão e intimação do ente, no FZE-05"
+ ],
+ "urgencias": [
+  "prioridade legal",
+  "obrigação de fazer em curso"
+ ],
+ "ato_cabivel": "decisão em caso especial contra a Fazenda",
+ "capitulos": [
+  "capítulo de execução contra a Fazenda em caso especial (título extrajudicial, cumprimento misto, entes solidários, sindicato, cessão)"
+ ],
+ "especialistas": [
+  "calculista",
+  "pesquisador-vigencia"
+ ],
+ "tabela": [
+  "Fazenda em caso especial: título extrajudicial com defesa como impugnação, cumprimento misto, astreintes e danos contra entes solidários, sindicato substituto processual, cessão de crédito do requisitório (27.10.2026)",
+  "Esqueleto 0.1: FZE-01 a FZE-04; FZE-05 adota o modelo vigente de cessão de crédito"
+ ],
+ "tipo_por_ramo": {
+  "FZE-02": "DEC"
+ },
+ "familia_por_ramo": {
+  "FZE-02": "AD"
+ },
+ "gatilhos": [
+  [
+   "cumprimento misto",
+   "entes solidários",
+   "substituição processual por sindicato"
+  ]
+ ],
+ "exemplo_nome": "AE_DEC_execução extrajudicial_embargos recebidos",
+ "origem": "pacote de lacunas de 27.10.2026 (triagem de cobertura de 71 processos conclusos nas tarefas de alvará, homologação de cálculo, impugnação e sentença de extinção; revisão pelo cofre do Obsidian de 27.10.2026)",
+ "versao_modulo": "0.1.0",
+ "data": "27.10.2026",
+ "normas_incluir_registro": [
+  {
+   "id": "cpc-373-i-ii",
+   "referencia": "art. 373, I e II, do CPC (ônus da prova)"
+  },
+  {
+   "id": "lei-8906-art-23",
+   "referencia": "art. 23 da Lei nº 8.906/1994 (honorários de sucumbência pertencem ao advogado)"
+  },
+  {
+   "id": "cpc-919",
+   "referencia": "art. 919 do CPC (efeito suspensivo dos embargos)"
+  },
+  {
+   "id": "cpc-910",
+   "referencia": "art. 910 do CPC (execução contra a Fazenda Pública fundada em título extrajudicial)"
+  },
+  {
+   "id": "cpc-914-918-920",
+   "referencia": "arts. 914, 918 e 920 do CPC (embargos à execução)"
+  },
+  {
+   "id": "cpc-239-p1-242-p3-277",
+   "referencia": "art. 239, § 1º, art. 242, § 3º, e art. 277 do CPC"
+  },
+  {
+   "id": "cpc-783-784",
+   "referencia": "arts. 783 e 784 do CPC (título executivo extrajudicial)"
+  },
+  {
+   "id": "cc-397-405",
+   "referencia": "arts. 397 e 405 do Código Civil (mora e termo inicial dos juros)"
+  },
+  {
+   "id": "cf-100-p13-p14",
+   "referencia": "art. 100, §§ 13 e 14, da Constituição (cessão de créditos em precatórios)"
+  },
+  {
+   "id": "tjma-resol-gp-17-2023",
+   "referencia": "Resolução GP nº 17/2023 do TJMA (arts. 8º, 66 e 68; cessão de crédito em requisitórios)"
+  },
+  {
+   "id": "stj-resp-1091443",
+   "referencia": "REsp 1.091.443/SP do STJ (cessão de precatório sem anuência do devedor)"
+  }
+ ]
+}

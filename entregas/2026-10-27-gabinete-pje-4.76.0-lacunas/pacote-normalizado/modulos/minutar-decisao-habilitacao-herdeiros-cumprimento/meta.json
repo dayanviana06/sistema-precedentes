@@ -1,0 +1,86 @@
+{
+ "prefixo": "HAB",
+ "skill": "minutar-decisao-habilitacao-herdeiros-cumprimento",
+ "especie": "DP",
+ "titulo": "Habilitação de herdeiros e sucessão processual no cumprimento",
+ "descricao": "Minuta, em atos próprios (versão 0.1, esqueleto sem modelo vigente do gabinete), o óbito de parte no cumprimento de sentença contra executado particular: despacho que determina a prova do óbito noticiado (HAB-01); despacho que recebe o pedido de habilitação e intima ou cita a parte contrária (HAB-02); decisão que defere a habilitação de um ou de vários sucessores, define a representação e retoma o processo (HAB-03); habilitação seguida de alvarás aos sucessores, ao perito e ao advogado, com rateio, poderes e custas (HAB-04). Use quando o usuário disser: \"habilitação de herdeiros no cumprimento\", \"o exequente faleceu\", \"sucessão processual\", \"alvará aos herdeiros\", \"óbito do autor no cumprimento\".",
+ "familias": [
+  "AD",
+  "AC",
+  "AJ"
+ ],
+ "familia": "AD",
+ "tipo": "DEC",
+ "complexidade": 2,
+ "sit_id": "habilitacao-herdeiros-cumprimento",
+ "situacao": "Cumprimento de sentença contra executado particular com óbito de parte noticiado ou provado: prova do óbito, recebimento do pedido de habilitação com intimação ou citação da parte contrária, deferimento da habilitação com representação e retomada, ou habilitação seguida de alvarás aos sucessores; a suspensão pela notícia do óbito sem pedido de habilitação continua de 'suspensao-sobrestamento-civel' (SUS-03)",
+ "marcos": [
+  "notícia ou certidão de óbito com Id.",
+  "pedido de habilitação com documentos dos sucessores",
+  "manifestação ou citação da parte contrária",
+  "depósito judicial a levantar, quando houver"
+ ],
+ "urgencias": [
+  "prioridade legal",
+  "crédito alimentar ou de pessoa idosa"
+ ],
+ "ato_cabivel": "habilitação de herdeiros no cumprimento",
+ "capitulos": [
+  "habilitação dos sucessores e alvarás no cumprimento de sentença"
+ ],
+ "especialistas": [
+  "calculista",
+  "pesquisador-vigencia"
+ ],
+ "tabela": [
+  "Óbito de parte no cumprimento contra particular: prova do óbito, recebimento do pedido de habilitação, deferimento da habilitação e alvarás aos sucessores (27.10.2026)",
+  "Esqueleto 0.1 sem modelo: HAB-01 e HAB-02 (despachos), HAB-03 e HAB-04"
+ ],
+ "tipo_por_ramo": {
+  "HAB-01": "DESP",
+  "HAB-02": "DESP",
+  "HAB-03": "DEC",
+  "HAB-04": "DEC"
+ },
+ "gatilhos": [
+  [
+   "habilitação de herdeiros",
+   "habilitação dos sucessores",
+   "sucessão processual"
+  ]
+ ],
+ "exemplo_nome": "AD_DEC_habilitação de herdeiros_deferimento",
+ "origem": "pacote de lacunas de 27.10.2026 (triagem de cobertura de 71 processos conclusos nas tarefas de alvará, homologação de cálculo, impugnação e sentença de extinção; revisão pelo cofre do Obsidian de 27.10.2026)",
+ "versao_modulo": "0.1.0",
+ "data": "27.10.2026",
+ "normas_incluir_registro": [
+  {
+   "id": "lei-8906-art-23",
+   "referencia": "art. 23 da Lei nº 8.906/1994 (honorários de sucumbência pertencem ao advogado)"
+  },
+  {
+   "id": "cpc-75-vii",
+   "referencia": "art. 75, VII, do CPC (espólio representado pelo inventariante)"
+  },
+  {
+   "id": "cpc-76",
+   "referencia": "art. 76 do CPC (irregularidade de representação)"
+  },
+  {
+   "id": "cpc-178-ii",
+   "referencia": "art. 178, II, do CPC (intervenção do Ministério Público com incapaz)"
+  },
+  {
+   "id": "cpc-796-cc-1792",
+   "referencia": "art. 796 do CPC e art. 1.792 do Código Civil (responsabilidade dos sucessores nas forças da herança)"
+  },
+  {
+   "id": "cc-682-ii",
+   "referencia": "art. 682, II, do Código Civil (extinção do mandato pela morte)"
+  },
+  {
+   "id": "cc-943",
+   "referencia": "art. 943 do Código Civil (transmissão do direito de exigir reparação)"
+  }
+ ]
+}

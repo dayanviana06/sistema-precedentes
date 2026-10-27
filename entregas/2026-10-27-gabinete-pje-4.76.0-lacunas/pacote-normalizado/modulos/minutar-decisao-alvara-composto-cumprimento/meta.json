@@ -1,0 +1,72 @@
+{
+ "prefixo": "ALC",
+ "skill": "minutar-decisao-alvara-composto-cumprimento",
+ "especie": "D",
+ "titulo": "Alvará composto no cumprimento contra executado particular",
+ "descricao": "Decide, em ato próprio (versão 0.1, esqueleto sem modelo vigente do gabinete), o alvará que no cumprimento contra executado particular vem misturado com questão prévia: depósito depois do prazo do art. 523 do CPC com multa e honorários pendentes (ALC-01); cálculo da Contadoria sem impugnação, com depósito a maior e restituição do excedente (ALC-02); alegação de quitação por depósito, com a natureza do depósito (ALC-03); alvarás a mais de um beneficiário, como perito, credor e patrono, em um só ato (ALC-04). Use quando o usuário disser: \"alvará com multa do 523\", \"depósito intempestivo\", \"restituição do excedente\", \"depósito a maior\", \"alegação de quitação\", \"alvará ao perito e ao credor\".",
+ "familias": [
+  "AD",
+  "AC",
+  "AB"
+ ],
+ "familia": "AD",
+ "tipo": "DEC",
+ "complexidade": 2,
+ "sit_id": "alvara-composto-cumprimento",
+ "situacao": "Cumprimento contra executado particular com valor em conta judicial ou pedido de alvará e questão prévia que o condiciona: tempestividade do depósito e multa do art. 523, § 1º; cálculo da Contadoria a homologar com excedente a restituir; natureza do depósito (garantia ou pagamento) diante de alegação de quitação; pluralidade de beneficiários dependente de decisão anterior",
+ "marcos": [
+  "intimação para pagar com Id. e data",
+  "comprovante de depósito e extrato da conta judicial",
+  "cálculo da Contadoria ou demonstrativo e manifestação das partes",
+  "pedido de alvará ou alegação de quitação, com Id."
+ ],
+ "urgencias": [
+  "crédito alimentar ou de pessoa idosa",
+  "prioridade legal"
+ ],
+ "ato_cabivel": "decisão de alvará composto",
+ "capitulos": [
+  "alvará condicionado a multa do art. 523, excedente, natureza do depósito ou vários beneficiários"
+ ],
+ "especialistas": [
+  "calculista",
+  "pesquisador-vigencia"
+ ],
+ "tabela": [
+  "Alvará com questão prévia no cumprimento contra particular: depósito intempestivo e multa do art. 523, homologação com restituição do excedente, alegação de quitação por depósito, vários beneficiários (27.10.2026)",
+  "Esqueleto 0.1 sem modelo: ALC-01 a ALC-04"
+ ],
+ "gatilhos": [
+  [
+   "depósito intempestivo",
+   "restituição do excedente",
+   "depósito a maior"
+  ]
+ ],
+ "exemplo_nome": "AD_DEC_alvará_depósito intempestivo e multa do art. 523",
+ "origem": "pacote de lacunas de 27.10.2026 (triagem de cobertura de 71 processos conclusos nas tarefas de alvará, homologação de cálculo, impugnação e sentença de extinção; revisão pelo cofre do Obsidian de 27.10.2026)",
+ "versao_modulo": "0.1.0",
+ "data": "27.10.2026",
+ "normas_incluir_registro": [
+  {
+   "id": "cpc-219",
+   "referencia": "art. 219 do CPC (contagem de prazos em dias úteis)"
+  },
+  {
+   "id": "cpc-373-i-ii",
+   "referencia": "art. 373, I e II, do CPC (ônus da prova)"
+  },
+  {
+   "id": "lei-8906-art-23",
+   "referencia": "art. 23 da Lei nº 8.906/1994 (honorários de sucumbência pertencem ao advogado)"
+  },
+  {
+   "id": "cnj-recomendacao-159-2024",
+   "referencia": "Recomendação CNJ nº 159/2024 (conta de titularidade da parte)"
+  },
+  {
+   "id": "cc-275-277",
+   "referencia": "arts. 275 e 277 do Código Civil (devedores solidários)"
+  }
+ ]
+}
